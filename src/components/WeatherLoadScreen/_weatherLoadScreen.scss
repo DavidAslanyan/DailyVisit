@@ -1,0 +1,23 @@
+.weather {
+  &__load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__loading {
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    padding: 60px 0;
+  }
+
+  &__note {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff0000;
+  }
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+  line-height: 1.55;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #cfeafe;
+}
+::-webkit-scrollbar-thumb {
+  background: #0b2239;
+  border-radius: 6px;
+}
+
+.contentWidth {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.main-header {
+  position: relative;
+}
+
+.layers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.layers__header {
+  z-index: 1;
+}
+
+.header__title {
+  font-size: 48px;
+  color: #fff;
+}
+
+.header__subtitle {
+  padding: 40px 0 0 0;
+  color: #fff;
+}
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.layers__top{
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+}
+
+.layers__middle {
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+
+.main-article {
+  min-height: 120vh;
+  background-size: cover;
+}
+
+.main-article__content {
+  padding: 120px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

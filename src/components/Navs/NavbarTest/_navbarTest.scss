@@ -1,0 +1,62 @@
+.nav {
+
+  &__list {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__link {
+    padding: 0 0 10px 0;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 3px solid #000069;
+    }
+  }
+
+  &__dropdown-menuBlog {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: #0000003d 0px 3px 8px;
+    padding: 10px;
+  }
+
+  &__dropdownBlog:hover &__dropdown-menuBlog {
+    display: block;
+  }
+
+  &__dropdown-menuBlog li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  &__dropdown-menuBlog a:hover {
+    color: #0000ff;
+  }
+
+  &__dropdown-menuRentals {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: #0000003d 0px 3px 8px;
+    padding: 10px;
+  }
+
+  &__dropdownRentals:hover &__dropdown-menuRentals {
+    display: block;
+  }
+
+  &__dropdownPosition {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

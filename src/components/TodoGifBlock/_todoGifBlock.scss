@@ -1,0 +1,28 @@
+.todo {
+  &-imageBlock {
+    @media(max-width: 1120px) {
+      display: none;
+    }
+  }
+
+  &__imageWrapper {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__rightTitle {
+    position: relative;
+    top: 70px;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: cursive, sans-serif;
+  }
+}

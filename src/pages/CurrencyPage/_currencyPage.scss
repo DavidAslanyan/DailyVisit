@@ -1,0 +1,17 @@
+.currency {
+
+  &__mainTitle {
+    padding: 25px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+}

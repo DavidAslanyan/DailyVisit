@@ -1,0 +1,24 @@
+.burgerMenu {
+  position: fixed;
+  top: 25px;
+  left: 20px;
+  z-index: 1;
+  background-color: #0000005f;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &__icon {
+    font-size: 42px;
+    color: #fff;
+    transition: 0.25s ease;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}

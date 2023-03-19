@@ -1,0 +1,115 @@
+.todo {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  
+  &__content {
+    margin: 120px;
+    padding: 20px;
+    width: 100%;
+    max-width: 550px;
+    min-height: 400px;
+    background-color: #000000c0;
+    border-radius: 15px;
+
+    @media(max-width: 1120px) {
+      margin: 20px auto;
+      left: 0;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    color: #fff;
+  }
+
+  &__topTitle {
+    padding: 10px 0;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    display: none;
+
+    @media(max-width: 1120px) {
+      display: block;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__input {
+    padding: 0 0 0 10px;
+    width: 100%;
+    max-width: 370px;
+    height: 43px;
+    font-size: 24px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: inherit;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.25s ease;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  &__numberOfTodo, &__completedTodo {
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__buttonBottomOne, &__buttonBottomTwo {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.25s ease;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  &__buttonBottomOne {
+    margin: 0 15px 0 0;
+  }
+
+  &__empty {
+    padding: 40px 0;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &__errorMessage {
+    color: #ff0000;
+    font-size: 18px;
+  }
+}

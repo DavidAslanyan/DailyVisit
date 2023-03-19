@@ -1,0 +1,27 @@
+.pageTitle {
+  padding: 40px 0;;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #6a6a6a; 
+
+  &::before {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 2px;
+    background-color: #cecece;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 2px;
+    background-color: #cecece;
+  }
+}

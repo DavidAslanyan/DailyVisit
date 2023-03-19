@@ -1,0 +1,18 @@
+.weather {
+  &__cityTitle {
+    text-align: center;
+    padding: 125px 0 0 0;
+    font-size: 64px;
+    color: #e0e0e0;
+    text-shadow: 6px 5px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  &__countryTitle {
+    font-size: 36px;
+    color: #6666ff;
+  }
+
+  &__titleColumn {
+    font-size: 36px;
+  }
+}

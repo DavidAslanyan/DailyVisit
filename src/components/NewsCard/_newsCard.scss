@@ -1,0 +1,71 @@
+.newsCard {
+
+  background-color: #fff;
+  box-shadow: #0000003d 0px 3px 8px;
+  width: 300px;
+  height: 460px;
+  position: relative;
+
+  @media(max-width: 680px) {
+    width: 200px;
+    height: 480px;
+    font-size: 14px;
+  }
+
+  &__source {
+    padding: 5px;
+    text-transform: capitalize;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 160px;
+
+    @media(max-width: 680px) {
+      max-height: 110px;
+    }
+  }
+
+  &__authorLink {
+    color: #02aacc;
+    font-weight: 700;
+  }
+
+  &__title, &__description, &__author {
+    padding: 0 10px;
+  }
+
+  &__published {
+    padding: 0 10px 10px 10px;
+  }
+
+  &__readMore {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transition: 0.25s ease;
+
+    &:hover {
+      padding: 5px 30px 5px 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  &__readMoreArrow {
+    position: absolute;
+    left: 93px;
+    bottom: 6px;
+    font-size: 24px;
+    color: #fff;
+    z-index: 5;
+  }
+}

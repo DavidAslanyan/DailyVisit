@@ -1,0 +1,25 @@
+.weather {
+  &__item {
+    border-bottom: 2px solid #8080804a;
+    @media(max-width: 480px) {
+      border: none;
+    }
+  }
+
+  &__itemTitle {
+    color: #000;
+  }
+
+  &__data {
+    color: #6666ff;
+  }
+
+  &__icon {
+    color: #000;
+    font-size: 24px;
+
+    @media(max-width: 340px) {
+      display: none;
+    }
+  }
+}

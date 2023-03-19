@@ -1,0 +1,60 @@
+.nav {
+
+  @media(max-width: 950px) {
+    display: none;
+  }
+
+  position: relative;
+  bottom: 240px;
+  width: 100%;
+  background-color: #0000005f;
+  border-radius: 15px;
+  color: #fff;
+  padding: 25px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease-out;
+
+    &:after {
+      position: absolute;
+      top: 30px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: ".";
+      color: transparent;
+      background: #fff;
+      height: 2px;
+      transition: all 0.3s;
+    }
+
+    &:before {
+      transition: all 0.3s;
+    }
+
+    &:hover:after {
+      width: 80%;
+    }
+  }
+
+  &__link {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.25s ease;
+  }
+}

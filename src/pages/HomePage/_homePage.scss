@@ -1,0 +1,71 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__semiTitle {
+    color: #fff;
+    text-shadow: 0px 0px 6px #ffffffb3;
+    font-size: 24px;
+
+    @media(max-width: 900px) {
+      text-shadow: 0px 0px 4px #000;
+    }
+  }
+
+  &__titleStatic {
+    padding: 5px 0;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  &__dynamicTexts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+
+  &__dynamicTexts li {
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+
+  &__dynamicTexts h1 {
+    position: relative;
+    color: #fff;
+    font-size: 48px;
+    line-height: 90px;
+  }
+
+  &__dynamicTexts h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #0000002f;
+    border-left: 5px solid #fff;
+    animation: typing 3s steps(10) infinite;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
